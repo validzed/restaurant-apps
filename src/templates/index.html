@@ -3,115 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5A4FCF">
+  <link rel="icon" href="./favicon.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192x192.png">
+  <link rel="manifest" href="./app.webmanifest">
+  <script src="https://kit.fontawesome.com/57966cdd2c.js" crossorigin="anonymous"></script>
   <title>Restaurant Apps</title>
 </head>
 <body>
   <a href="#maincontent" class="skip_link">Skip to content</a>
   <header>
-    <nav id="navbar">
-      <div class="container navbar_wrapper">
-        <a href="#" class="nav_brand">
-          <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/new-ui-logo.png" alt="logo" />
-          <span>Restaurant App</span>
-        </a>
-        <form action="#" class="navbar_search">
-          <div class="search_icon">
-            <svg
-              class="search_svg"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span class="sr_only">Search icon</span>
-          </div>
-          <input type="text" role="search" placeholder="Search favorite food..." class="search_input" />
-        </form>
-        <div class="hamburger_icon">
-          <button id="btn_hamburger" type="button" aria-expanded="false">
-            <span class="sr_only">Open menu</span>
-            <svg
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div id="drawer_menu">
-          <div class="close_icon">
-            <button id="btn_close" type="button" aria-expanded="false">
-              <span class="sr_only">Open menu</span>
-              <svg fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="stroke-width: 3">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-              <span class="label_close_icon">Close</span>
-            </button>
-          </div>
-          <form action="#" class="drawer_input">
-            <div class="search_icon">
-              <svg
-                class="search_svg"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="sr_only">Search icon</span>
-            </div>
-            <input type="text" placeholder="Search favorite food..." class="search_input" />
-          </form>
-          <ul class="top_menu_wrapper">
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Favorite</a></li>
-            <li><a href="https://www.instagram.com/validzed" target="_blank">About Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <figure class="hero_landing">
-      <img src="./images/hero-image_2.jpg" alt="hero image">
-      <figcaption class="hero_text">
-        <h1>BEST QUALITY RESTAURANT</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in blandit eros, ut aliquet lorem. Sed et faucibus lacus. Nullam et efficitur elit, imperdiet mollis elit. Class aptent taciti sociosqu ad litora torquent.</p>
-        <a href="#maincontent">Explore All</a>
-      </figcaption>
-    </figure>
+    <navbar-app></navbar-app>
   </header>
 
-  <main id="maincontent">
-    <h2 class="heading_title">Recommended Restaurant</h2>
-    <section class="list_items"></section>
-  </main>
+  <main tabindex="0" id="maincontent"></main>
   
-  <footer class="footer_app">
-    <div class="container footer_wrapper">
-      <div class="copyright">
-        <a href="#">&copy; 2023 - Restaurant App</a>
-      </div>
-      <ul class="footer_menu">
-        <li><a href="#">Term of Service</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-    </div>
-  </footer>
+  <footer-app></footer-app>
 </body>
-</html>
+</html> 
