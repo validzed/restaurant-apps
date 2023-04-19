@@ -13,8 +13,8 @@ class RestoItem extends HTMLElement {
         <div class="image">
           <a href="/#/detail/${this._restaurant.id}">
             <picture>
-              <source media="(max-width: 800px)" srcset="${CONFIG.BASE_IMAGE_URL_SMALL}/${this._restaurant.pictureId}">
-              <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL_MEDIUM}/${this._restaurant.pictureId}" alt="picture ${this._restaurant.name}" width="450" height="200">
+              <source media="(max-width: 800px)" data-srcset="${CONFIG.BASE_IMAGE_URL_SMALL}/${this._restaurant.pictureId}">
+              <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL_MEDIUM}/${this._restaurant.pictureId}" alt="picture ${this._restaurant.name}" width="450" height="200">
             </picture>
           </a>
           <span class="city">${this._restaurant.city}</span>

@@ -16,9 +16,7 @@ const List = {
     const formDrawerSearch = document.querySelector('#formDrawerSearch');
     const drawerSearchInput = document.querySelector('#drawerSearchInput');
 
-    let restaurants;
-
-    restaurants = await DataSource.getListRestaurant();
+    let restaurants = await DataSource.getListRestaurant();
 
     const onSearchHandler = async (keyword) => {
       restaurants = await DataSource.searchRestaurant(keyword);
