@@ -2,3 +2,4 @@ dist
 e2e/outputs/**
 node_modules
 reports
+package-lock.json

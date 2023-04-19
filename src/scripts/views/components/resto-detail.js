@@ -24,7 +24,10 @@ class RestoDetail extends HTMLElement {
       </div>
       <div class="detail_content">
         <div class="detail_content_picture">
-          <img src="${CONFIG.BASE_IMAGE_URL_MEDIUM}/${this._restaurant.pictureId}" alt="${this._restaurant.name}" />
+          <picture>
+            <source media="(max-width: 380px)" data-srcset="${CONFIG.BASE_IMAGE_URL_SMALL}/${this._restaurant.pictureId}">
+            <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL_MEDIUM}/${this._restaurant.pictureId}" alt="picture ${this._restaurant.name}">
+          </picture>
         </div>
         <div class="detail_content_info">
           <div class="detail_content_info_item">

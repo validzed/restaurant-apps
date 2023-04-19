@@ -7,8 +7,8 @@ class HeroApp extends HTMLElement {
     this.innerHTML = `
       <figure class="hero_landing">
         <picture>
-          <source media="(max-width: 600px)" srcset="./images/hero-image_2-small.jpg">
-          <img src="./images/hero-image_2-large.jpg" alt="restaurant hero image" height="600" width="1280">
+          <source media="(max-width: 480px)" data-srcset="./images/hero-image_2-small.jpg">
+          <img class="lazyload" data-src="./images/hero-image_2-large.jpg" alt="restaurant hero image">
         </picture>
         <figcaption class="hero_text">
           <h1>BEST QUALITY RESTAURANT</h1>
